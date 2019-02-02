@@ -11,6 +11,14 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.up = -(planet.transform.position - transform.position).normalized;
 
-        transform.position += -transform.right * speed * Time.deltaTime;
+        transform.position += transform.forward * speed * Time.deltaTime;
+
+        Debug.DrawRay(transform.position, transform.forward * 5, Color.red);
+    }
+
+    public void AdjustPosition()
+    {
+        LayerMask mask = LayerMask.GetMask("Planet");
+        if(Physics.Raycast())
     }
 }
