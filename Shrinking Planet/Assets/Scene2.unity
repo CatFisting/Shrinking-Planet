@@ -677,7 +677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1073771032
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1076,5 +1076,10 @@ PrefabInstance:
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6775362045809320077, guid: 26ca5f855f4e8bd4386a7d40b83a7259,
+        type: 3}
+      propertyPath: planet
+      value: 
+      objectReference: {fileID: 864199869}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26ca5f855f4e8bd4386a7d40b83a7259, type: 3}
