@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
     public void AdjustPosition()
     {
         LayerMask mask = LayerMask.GetMask("Planet");
-        if(Physics.Raycast())
+        if (Physics.Raycast(transform.position, -transform.up, .1f, mask))
+        {
+
+        }
     }
 }
